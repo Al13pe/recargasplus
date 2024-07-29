@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recargas Telcel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Recargas Telcel</h1>
+    </header>
+    
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="img/1.jpg" alt="Celular 1">
+                <img src="img/2.jpg" alt="Celular 2">
+                <img src="img/3.jpg" alt="Celular 3">
+                <img src="img/4.jpg" alt="Celular 4">
+                <img src="img/5.jpg" alt="Celular 5">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </section>
+        
+        <section class="recarga">
+            <h2>Compra tu Recarga</h2>
+            <form id="recargaForm">
+                <label for="monto">Monto de la recarga:</label>
+                <input type="number" id="monto" name="monto" required>
+
+                <label for="tipoTarjeta">Tipo de tarjeta:</label>
+                <select id="tipoTarjeta" name="tipoTarjeta" required>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+
+                <label for="numeroTarjeta">Número de tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+
+                <label for="nombreTitular">Nombre del titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                
+                <label for="cvv">Número de Telefono:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <label for="banco">Banco:</label>
+                <select id="banco" name="banco" required>
+                    <option value="bancomer">BBVA </option>
+                    <option value="banamex">Banamex</option>
+                    <option value="santander">Santander</option>
+                    <option value="hsbc">HSBC</option>
+                    <option value="scotiabank">Scotiabank</option>
+                </select>
+
+                <button type="submit">Realizar Recarga</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Telcel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
